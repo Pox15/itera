@@ -1,0 +1,105 @@
+body{
+    margin: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+ ul{
+ /*   list-style-type: none; */
+    background-color: #23252B;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+
+}
+
+.navbar a:hover{
+    color: white;
+}
+.navbar li{
+    display: inline-block;
+    color: white;
+    padding: 22px;
+    list-style-type: none;
+
+}
+.right{
+    float: right;
+    display: flex;
+}
+
+.main{
+    width: 100%;
+}
+#crunchyroll{
+    color: #FF760E;
+    list-style-type: none;
+    cursor: pointer;
+    display: inline;
+}
+#crunchyroll:hover{
+    color: white;
+    transition-duration: 0.2s;
+}
+.navbar img {
+
+    max-height: 20px; /* Altura máxima ajustada conforme necessário */
+}
+.sinopse{
+    position: absolute;
+    left: 65px;
+    bottom: 37%;
+    color: white;
+    width: 30%;
+    font-size: 1.2em;  
+    text-align: justify;
+}
+.sombra-esquerda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Largura da sombra esquerda */
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+}
+.imagem-conteiner {
+    position: relative;
+    overflow: hidden;
+}
+.imagem-superior {
+    position: absolute;
+    top: 140px; /* Ajuste conforme necessário para posicionar a imagem */
+    left: 150px; /* Ajuste conforme necessário para posicionar a imagem */
+    max-width: 30%; /* Garante que a largura não ultrapasse o contêiner pai */
+    max-height: 25%; /* Garante que a altura não ultrapasse o contêiner pai */
+    z-index: 2; /* Certifica-se de que a imagem fique acima da imagem principal e da sombra esquerda */
+    cursor: pointer;
+}
+.legenda {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    margin: 0;
+    padding: 5px;
+    color: grey;
+}
+.button{
+left: 60px;
+bottom: 30%;
+position: absolute;
+width: 260px;
+height: 35px;
+background-color:#F47521;
+font-size: 1.1em;
+border: none;
+cursor: pointer;
+}
